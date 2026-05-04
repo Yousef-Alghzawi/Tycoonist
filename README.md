@@ -1,6 +1,6 @@
 # Tycoonist
 
-Public company site for Tycoonist and the hosted privacy policy for `Pharaoh's Rise`.
+Public company site for Tycoonist and the hosted privacy policy for `Dynasty of the Nile`.
 
 ## Pages
 

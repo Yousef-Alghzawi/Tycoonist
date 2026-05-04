@@ -377,10 +377,10 @@ h1, h2, h3, .wordmark {
 
 .hero-title-sub {
   font-family: "Cinzel", serif;
-  font-size: clamp(1.6rem, 5vw, 4.4rem);
+  font-size: clamp(1.2rem, 3.8vw, 3.4rem);
   font-weight: 400;
-  letter-spacing: 0.52em;
-  margin-top: 6px;
+  letter-spacing: 0.28em;
+  margin-top: 10px;
   background: linear-gradient(180deg, var(--gold-200) 0%, var(--gold-400) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
