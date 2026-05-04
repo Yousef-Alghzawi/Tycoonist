@@ -5,191 +5,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Tycoonist builds premium mobile tycoon games. Read about Pharaoh's Rise and access the public privacy policy."
+      content="Pharaoh's Rise — Build an ancient Egyptian empire from a Nile settlement to a monument-building dynasty. A mobile tycoon game by Tycoonist."
     />
-    <title>Tycoonist</title>
+    <title>Tycoonist — Pharaoh's Rise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@700&family=Lora:ital,wght@0,400;1,400&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <a class="wordmark" href="./index.html">Tycoonist</a>
-        <nav class="site-nav" aria-label="Primary">
+
+    <!-- ============================================================
+         NAVIGATION
+    ============================================================ -->
+    <nav class="site-nav" role="navigation" aria-label="Primary">
+      <div class="nav-inner">
+        <a class="wordmark" href="./index.html">TYCOONIST</a>
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#game">Game</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#trust">Trust</a></li>
+          <li><a href="./privacy-policy.html" class="nav-pill">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-image-wrap">
+        <img
+          src="./images/pyramid.jpg"
+          alt="Pharaoh's Rise — pyramid construction and ancient Egyptian city"
+          class="hero-img"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">A Tycoonist Game</p>
+        <h1 class="hero-title">
+          <span class="hero-title-main">PHARAOH'S</span>
+          <span class="hero-title-sub">RISE</span>
+        </h1>
+        <p class="hero-tagline">Build a Nile settlement into a monument-building dynasty</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#game">Discover the Game</a>
+          <a class="btn btn-outline" href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STATS BAR
+    ============================================================ -->
+    <div class="stats-bar" aria-label="Game details">
+      <div class="stats-inner">
+        <div class="stat">
+          <span class="stat-value">Android</span>
+          <span class="stat-label">Platform</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-value">Idle + Strategy</span>
+          <span class="stat-label">Genre</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-value">Free to Play</span>
+          <span class="stat-label">Model</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-value">Local-First</span>
+          <span class="stat-label">Save System</span>
+        </div>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ============================================================
+           ABOUT SECTION
+      ============================================================ -->
+      <section class="section about-section" id="about">
+        <div class="section-inner about-inner">
+
+          <div class="about-text">
+            <p class="section-eyebrow">The Studio</p>
+            <h2 class="section-title">Built for Long-Term Players</h2>
+            <div class="ornament-divider" aria-hidden="true">
+              <span></span>
+              <span class="diamond"></span>
+              <span></span>
+            </div>
+            <p class="about-body">
+              Tycoonist crafts mobile tycoon and idle strategy games that reward planning, return
+              play, and transparent systems. We believe great mobile games don't need dark
+              patterns — they earn sessions through genuine satisfaction.
+            </p>
+            <p class="about-body">
+              Our studio approach emphasizes strong UX, device-friendly performance, and
+              store-ready compliance for privacy, monetization, and player communication. Public
+              trust pages are simple to find and easy to read.
+            </p>
+            <a class="btn btn-gold-outline" href="#game">See Our Game &rarr;</a>
+          </div>
+
+          <div class="about-visual">
+            <div class="image-frame">
+              <img src="./images/city.jpg" alt="Ancient Egyptian city along the Nile" />
+              <div class="frame-corners" aria-hidden="true"></div>
+            </div>
+            <p class="image-caption">Pharaoh's Rise — City Development</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================
+           GAME SECTION
+      ============================================================ -->
+      <section class="section game-section" id="game">
+        <div class="section-inner">
+
+          <div class="section-header">
+            <p class="section-eyebrow">Featured Title</p>
+            <h2 class="section-title gold-text">Pharaoh's Rise</h2>
+            <div class="ornament-divider centered" aria-hidden="true">
+              <span></span>
+              <span class="diamond"></span>
+              <span></span>
+            </div>
+            <p class="section-subtitle">
+              From a humble Nile settlement to a monument-building empire — your dynasty awaits.
+            </p>
+          </div>
+
+          <div class="game-showcase">
+
+            <div class="showcase-visual">
+              <div class="image-frame image-frame-tall">
+                <img src="./images/marketplace.jpg" alt="Bustling ancient Egyptian marketplace" />
+                <div class="frame-corners" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="game-details">
+              <ul class="game-features-list" role="list">
+                <li class="game-feature">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Kingdom Building</h3>
+                    <p>Grow farms, quarries, markets, docks, temples, and pyramid works across vast dynasties.</p>
+                  </div>
+                </li>
+                <li class="game-feature">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                      <polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Offline Progression</h3>
+                    <p>Your kingdom grows even when you're away. Return to riches and new opportunities.</p>
+                  </div>
+                </li>
+                <li class="game-feature">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Player-First Design</h3>
+                    <p>No dark patterns. Optional rewarded ads, optional IAP, local-first saves you control.</p>
+                  </div>
+                </li>
+                <li class="game-feature">
+                  <div class="feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <polyline points="17 6 23 6 23 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Dynasty Resets</h3>
+                    <p>Prestige through repeat dynasties, unlocking new eras and permanent upgrades.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="game-meta-grid" role="list" aria-label="Game specifications">
+                <div class="meta-item" role="listitem">
+                  <span class="meta-label">Platform</span>
+                  <span class="meta-value">Android</span>
+                </div>
+                <div class="meta-item" role="listitem">
+                  <span class="meta-label">Monetization</span>
+                  <span class="meta-value">Rewarded Ads + IAP</span>
+                </div>
+                <div class="meta-item" role="listitem">
+                  <span class="meta-label">Save System</span>
+                  <span class="meta-value">Local-First</span>
+                </div>
+                <div class="meta-item" role="listitem">
+                  <span class="meta-label">Privacy Policy</span>
+                  <span class="meta-value">Public</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           GALLERY SECTION
+      ============================================================ -->
+      <section class="section gallery-section" id="gallery">
+        <div class="section-inner">
+
+          <div class="section-header">
+            <p class="section-eyebrow">Screenshots</p>
+            <h2 class="section-title">The World of Pharaoh's Rise</h2>
+            <div class="ornament-divider centered" aria-hidden="true">
+              <span></span>
+              <span class="diamond"></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item gallery-item-large">
+              <img src="./images/pyramid.jpg" alt="Pyramid construction and ancient Egyptian city" loading="lazy" />
+              <div class="gallery-caption">Monument Construction</div>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/settlement.jpg" alt="Riverside settlement with farms and canals" loading="lazy" />
+              <div class="gallery-caption">Riverside Settlement</div>
+            </div>
+            <div class="gallery-item">
+              <img src="./images/marketplace.jpg" alt="Bustling ancient marketplace" loading="lazy" />
+              <div class="gallery-caption">The Great Bazaar</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================
+           TRUST SECTION
+      ============================================================ -->
+      <section class="section trust-section" id="trust">
+        <div class="section-inner">
+
+          <div class="section-header">
+            <p class="section-eyebrow">Trust &amp; Compliance</p>
+            <h2 class="section-title">Built on Transparency</h2>
+            <div class="ornament-divider centered" aria-hidden="true">
+              <span></span>
+              <span class="diamond"></span>
+              <span></span>
+            </div>
+            <p class="section-subtitle">Clear disclosures. Public policy. Real player controls.</p>
+          </div>
+
+          <div class="trust-grid">
+
+            <article class="trust-card">
+              <div class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>Public Policy URL</h3>
+              <p>The privacy policy is published on a public, non-editable web page suitable for Play Console submission.</p>
+            </article>
+
+            <article class="trust-card">
+              <div class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3>Children &amp; Families</h3>
+              <p>The policy explicitly addresses treatment of users under 13, over 13, and users of unknown age where Google Play Families rules apply.</p>
+            </article>
+
+            <article class="trust-card">
+              <div class="trust-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3>Player Controls</h3>
+              <p>Restore purchases, save export and import, reset behavior, and ad privacy options — all disclosed and player-controlled.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CTA SECTION
+      ============================================================ -->
+      <section class="cta-section">
+        <div class="cta-image-wrap" aria-hidden="true">
+          <img src="./images/settlement.jpg" alt="" />
+          <div class="cta-overlay"></div>
+        </div>
+        <div class="cta-content">
+          <p class="section-eyebrow">Policy Access</p>
+          <h2 class="cta-title">Need the Store-Safe Privacy Page?</h2>
+          <p class="cta-body">
+            Use the public privacy policy page for the Play Console listing and in-app privacy link.
+          </p>
+          <a class="btn btn-gold" href="./privacy-policy.html">Open Privacy Policy</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="wordmark footer-wordmark" href="./index.html">TYCOONIST</a>
+          <p>Mobile tycoon and idle strategy games.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#about">About</a>
-          <a href="#games">Games</a>
+          <a href="#game">Game</a>
           <a href="#trust">Trust</a>
           <a href="./privacy-policy.html">Privacy Policy</a>
         </nav>
-      </header>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tycoonist. All rights reserved.</p>
+      </div>
+    </footer>
 
-      <main>
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Mobile Tycoon Games</p>
-            <h1>Ancient kingdoms, modern progression systems.</h1>
-            <p class="lede">
-              Tycoonist builds mobile tycoon and idle strategy games with strong
-              live-ops foundations, clear player trust standards, and
-              public-facing privacy disclosures that match platform rules.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="./privacy-policy.html"
-                >Read Privacy Policy</a
-              >
-              <a class="button button-secondary" href="#games">View Game</a>
-            </div>
-          </div>
-
-          <aside class="hero-card">
-            <p class="card-label">Featured Release</p>
-            <h2>Pharaoh's Rise</h2>
-            <p>
-              A portrait-first idle kingdom builder about growing farms,
-              quarries, markets, docks, temples, and pyramid works across repeat
-              dynasties.
-            </p>
-            <dl class="stat-grid">
-              <div>
-                <dt>Platform</dt>
-                <dd>Android</dd>
-              </div>
-              <div>
-                <dt>Monetization</dt>
-                <dd>Rewarded ads + IAP</dd>
-              </div>
-              <div>
-                <dt>Save Model</dt>
-                <dd>Local-first</dd>
-              </div>
-              <div>
-                <dt>Public Policy</dt>
-                <dd>Available</dd>
-              </div>
-            </dl>
-          </aside>
-        </section>
-
-        <section id="about" class="content-section">
-          <div class="section-heading">
-            <p class="eyebrow">About Tycoonist</p>
-            <h2>
-              Designed for long-term progression, not disposable sessions.
-            </h2>
-          </div>
-          <div class="two-column">
-            <p>
-              Tycoonist focuses on strategy and idle management games that
-              reward planning, return play, and transparent systems. The studio
-              approach emphasizes strong UX, device-friendly performance, and
-              store-ready compliance for privacy, monetization, and player
-              communication.
-            </p>
-            <p>
-              We believe public trust pages should be simple to find and easy to
-              read. That is why the company site and the game policy are
-              published on a public GitHub Pages URL rather than hidden behind
-              app-only menus or PDF attachments.
-            </p>
-          </div>
-        </section>
-
-        <section id="games" class="content-section">
-          <div class="section-heading">
-            <p class="eyebrow">Current Title</p>
-            <h2>Pharaoh's Rise</h2>
-          </div>
-          <article class="feature-panel">
-            <div class="feature-media">
-              <div class="sun-disc"></div>
-              <div class="dune-ridge dune-ridge-back"></div>
-              <div class="dune-ridge dune-ridge-front"></div>
-              <div class="city-band">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <div class="feature-copy">
-              <p>
-                Build a Nile settlement into a monument-building kingdom through
-                short sessions, offline gains, objectives, rituals, and dynasty
-                resets.
-              </p>
-              <ul class="feature-list">
-                <li>Local-first progression and settings storage</li>
-                <li>Optional rewarded ads and optional in-app purchases</li>
-                <li>Save export and import tools controlled by the player</li>
-                <li>
-                  Public privacy policy and Google Play data handling
-                  disclosures
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
-
-        <section id="trust" class="content-section">
-          <div class="section-heading">
-            <p class="eyebrow">Trust and Compliance</p>
-            <h2>Built to support clear Google Play disclosures.</h2>
-          </div>
-          <div class="trust-grid">
-            <article class="trust-card">
-              <h3>Public policy URL</h3>
-              <p>
-                The privacy policy is published on a public, non-editable web
-                page suitable for Play Console submission.
-              </p>
-            </article>
-            <article class="trust-card">
-              <h3>Children and mixed-age rules</h3>
-              <p>
-                The policy explicitly addresses player treatment for users under
-                13, over 13, and users of unknown age where Google Play Families
-                rules apply.
-              </p>
-            </article>
-            <article class="trust-card">
-              <h3>Player controls</h3>
-              <p>
-                The policy covers restore purchases, save export and import,
-                reset behavior, and ad privacy options supported by the game.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section final-callout">
-          <div>
-            <p class="eyebrow">Policy Access</p>
-            <h2>Need the store-safe privacy page?</h2>
-            <p>
-              Use the public privacy policy page below for the Play Console
-              listing and in-app privacy link.
-            </p>
-          </div>
-          <a class="button button-primary" href="./privacy-policy.html"
-            >Open Privacy Policy</a
-          >
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div>
-          <strong>Tycoonist</strong>
-          <p>Mobile tycoon and idle strategy games.</p>
-        </div>
-        <div>
-          <a href="./privacy-policy.html">Privacy Policy</a>
-        </div>
-      </footer>
-    </div>
   </body>
 </html>
